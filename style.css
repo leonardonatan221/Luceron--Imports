@@ -423,7 +423,10 @@ body::before {
         flex-direction: column;
         text-align: center;
     }
-  body::before {
-    content: none;
-}
+/* Tirar faixa dourada no celular */
 
+@media (max-width: 900px) {
+    body::before {
+        display: none !important;
+    }
+}
