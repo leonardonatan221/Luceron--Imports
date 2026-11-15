@@ -329,6 +329,29 @@ hr {
     .seta {
         display: none;
     }
+    
+/* RODAPÉ NO CELULAR */
+
+@media (max-width: 700px) {
+
+    .rodape-colunas {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .rodape-colunas > * {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .rodape {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+}
+
 
 }
 
