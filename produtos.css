@@ -299,16 +299,17 @@ hr {
 }
 
 
-/* ---------- CELULAR (telas até 700px) ---------- */
+/* ---------- CELULAR (TELAS ATÉ 700px) ---------- */
+
 @media (max-width: 700px) {
 
-    /* afasta o conteúdo da barra dourada */
+    /* Afasta o conteúdo da barra dourada */
     body {
         padding-left: 40px;
         padding-right: 15px;
     }
 
-    /* títulos menores */
+    /* Títulos menores */
     h1 {
         font-size: 26px;
     }
@@ -317,25 +318,17 @@ hr {
         font-size: 24px;
     }
 
-    /* menos espaço nas laterais do carrossel */
-    .carrossel,
-    .carrossel2,
-    .carrossel3 {
-        padding: 0 40px;
-    }
-
-  /* CELULAR */
-    (max-width: 700px) {
-
-    /* Esconder as setas */
-    .seta {
-        display: none;
-    }
-
-    /* Retirar o espaço das setas */
+    /* Retira o espaço reservado para as setas */
     .carrossel,
     .carrossel2,
     .carrossel3 {
         padding: 0;
     }
+
+    /* ESCONDE TODAS AS SETAS NO CELULAR */
+    .seta {
+        display: none;
+    }
+
 }
+
