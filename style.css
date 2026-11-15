@@ -328,66 +328,160 @@ body::before {
     color: #fff0b3;
 }
 
-/* ----- CELULAR E TABLET ----- */
 
-@media (max-width: 900px) {
+/* RESPONSIVIDADE EXCLUSIVA PARA CELULARES */
 
+@media (max-width: 600px) {
+
+    /* Faixa dourada mais discreta */
+    body::before {
+        width: 8px;
+    }
+
+    /* Melhor aproveitamento da tela */
     .cabecalho,
     .inicio,
     .bloco,
     .rodape {
-        padding-left: 40px;
-        padding-right: 15px;
+        padding-left: 24px;
+        padding-right: 18px;
+    }
+
+    /* Cabeçalho */
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .logo {
         position: static;
-        width: 160px;
-        margin-top: 10px;
+        width: 155px;
+        max-width: 100%;
+        height: auto;
+        margin: 0;
     }
 
     .nome-marca {
-        font-size: 28px;
+        font-size: 23px;
+        line-height: 1.3;
+        margin: 0;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 24px;
+        margin: 5px 0 0;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    /* Apresentação inicial */
+    .inicio {
+        min-height: auto;
+        padding-top: 35px;
+        padding-bottom: 40px;
     }
 
     .inicio h1 {
-        font-size: 30px;
+        font-size: 25px;
+        line-height: 1.3;
+        max-width: 100%;
     }
 
-    .inicio {
-        min-height: auto;
-        padding-top: 30px;
-        padding-bottom: 30px;
+    .inicio p,
+    .bloco p {
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    /* Botões */
+    .inicio .botao {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 12px 0 0;
+        padding: 15px 10px;
+        font-size: 13px;
+    }
+
+    /* Seções */
+    .bloco {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .bloco h2 {
+        font-size: 25px;
+        line-height: 1.35;
+        margin-bottom: 22px;
+    }
+
+    .bloco h3 {
+        font-size: 21px;
     }
 
     .sobre-colunas {
         grid-template-columns: 1fr;
+        gap: 25px;
     }
 
+    .cartao {
+        padding: 20px 18px;
+    }
+
+    /* Redes sociais */
     .redes-sociais {
-        margin-right: 0;
         margin-top: 30px;
+        margin-right: 0;
     }
 
+    /* Localização */
     .localizacao {
-        margin: 40px auto;
+        margin: 20px auto 35px;
     }
 
+    /* Mapa em cima, vídeo embaixo */
+    .localizacao-conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 24px;
+    }
+
+    /* Mapa maior */
     .localizacao-conteudo iframe {
-        height: 300px;
+        flex: none;
+        width: 100%;
+        height: 320px;
+        min-height: 320px;
     }
 
+    /* Vídeo vertical maior */
     .video-loja {
-        width: 35%;
-        height: 300px;
+        flex: none;
+        align-self: center;
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        aspect-ratio: 9 / 16;
+        object-fit: contain;
+    }
+
+    /* Rodapé */
+    .rodape {
+        padding-top: 35px;
     }
 
     .rodape-colunas {
-        grid-template-columns: 1fr;
-    }
-
-    .rodape-baixo {
-        flex-direction: column;
-        text-align: center;
+        gap: 28px;
     }
 }
+
