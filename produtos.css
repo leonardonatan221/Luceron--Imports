@@ -324,9 +324,18 @@ hr {
         padding: 0 40px;
     }
 
-   /*Esconder as setas*/
-    @media (max-width: 600px) {
-    html, body {
-        scrollbar-width: none;
+  /* CELULAR */
+@media (max-width: 700px) {
+
+    /* Esconder as setas */
+    .seta {
+        display: none;
+    }
+
+    /* Retirar o espaço das setas */
+    .carrossel,
+    .carrossel2,
+    .carrossel3 {
+        padding: 0;
     }
 }
