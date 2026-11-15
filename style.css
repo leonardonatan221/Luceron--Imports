@@ -483,5 +483,16 @@ body::before {
     .rodape-colunas {
         gap: 28px;
     }
+    
+@media (max-width: 700px) {
+    .rodape-colunas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .rodape-colunas > div:last-child {
+        grid-column: 2;
+    }
+}
 }
 
