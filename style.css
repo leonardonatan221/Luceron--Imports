@@ -423,8 +423,7 @@ body::before {
         flex-direction: column;
         text-align: center;
     }
-    body::before {
-    display: none;
-}
+  body::before {
+    content: none;
 }
 
