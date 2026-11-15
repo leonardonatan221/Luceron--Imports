@@ -329,6 +329,7 @@ body::before {
     color: #fff0b3;
 }
 
+
 /* ----- CELULAR E TABLET ----- */
 
 @media (max-width: 900px) {
@@ -414,8 +415,8 @@ body::before {
         gap: 20px;
     }
 
-    .rodape-colunas > div:last-child {
-        grid-column: 2;
+    .rodape-colunas div:first-child {
+        grid-column: span 2;
     }
 
     .rodape-baixo {
@@ -423,3 +424,4 @@ body::before {
         text-align: center;
     }
 }
+
