@@ -324,10 +324,9 @@ hr {
         padding: 0 40px;
     }
 
-    /* setas um pouco menores */
-    .seta {
-        width: 36px;
-        height: 36px;
-        font-size: 16px;
+   /*Esconder as setas*/
+    @media (max-width: 600px) {
+    html, body {
+        scrollbar-width: none;
     }
 }
