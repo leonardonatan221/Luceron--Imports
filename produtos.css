@@ -299,43 +299,41 @@ hr {
 }
 
 
-/* RESPONSIVIDADE DO RODAPÉ NO CELULAR */
+
+/* CORRIGIR RODAPÉ NO CELULAR */
 
 @media (max-width: 700px) {
 
-    /* Rodapé */
     .rodape {
         width: 100%;
+        max-width: 100%;
         box-sizing: border-box;
         padding: 30px 20px;
     }
 
-    /* Organizar as colunas */
     .rodape-colunas {
-        display: flex;
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch;
+        width: 100%;
+        max-width: 100%;
         gap: 30px;
     }
 
-    /* Cada parte ocupa a largura disponível */
     .rodape-colunas > * {
-        width: 100%;
-        min-width: 0;
-        max-width: 100%;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
         box-sizing: border-box;
     }
 
-    /* Impedir textos de ultrapassarem a tela */
-    .rodape p,
-    .rodape a {
+    .rodape-colunas p,
+    .rodape-colunas a,
+    .rodape-colunas h3 {
         overflow-wrap: anywhere;
+        max-width: 100%;
     }
-
-    /* Logo do rodapé */
-    .rodape img {
-        max-width: 180px;
-        height: auto;
-    }
-
 }
 
