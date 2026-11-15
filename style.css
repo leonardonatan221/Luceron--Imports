@@ -357,6 +357,12 @@ body::before {
         padding-top: 20px;
         padding-bottom: 20px;
     }
+/*Esconder as setas*/
+    @media (max-width: 600px) {
+    html, body {
+        scrollbar-width: none;
+    }
+}
 
     .logo {
         position: static;
